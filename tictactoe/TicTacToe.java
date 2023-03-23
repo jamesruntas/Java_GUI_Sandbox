@@ -146,9 +146,17 @@ public class TicTacToe
    /**
     * Prints the board to standard out using toString().
     */
+   // To print out the board.
+    /* |---|---|---|
+       | 1 | 2 | 3 |
+       |-----------|
+       | 4 | 5 | 6 |
+       |-----------|
+       | 7 | 8 | 9 |
+       |---|---|---|*/
     public void print() 
     {
-        // something needs to be added here
+        System.out.println(toString());
     }
   
     
@@ -157,12 +165,42 @@ public class TicTacToe
     * a regular tic tac toe board, and be followed by a message if the game is over that says
     * who won (or indicates a tie).
     *
+    *
     * @return String representing the tic tac toe game state
     */
     public String toString() 
     {
-        return ""; // this needs to be updated
+      StringBuilder s = new StringBuilder();
+      for(int i = 0; i < 3; i++){
+          for(int j = 0; j < 3; j++){
+              s.append( " " + board[i][j] + " ");
+              if(j != 2){
+                  s.append("|");
+              }
+          }
+          if(i != 2){
+              s.append("\n --------- \n");
+          }
+      }
+      if(winner == TIE){
+          s.append("\n Its a tie");
+      }else if(winner != EMPTY){
+          s.append("\n " + winner + " is the winner");
+      }
+      return s.toString(); 
+
+
+
     }
     
+
+
+   public static void main(String args[]) {  
+      System.out.println("Starting");  
+      TicTacToe game = new TicTacToe();
+
+      game.playGame();
+  }  
+
 }
 

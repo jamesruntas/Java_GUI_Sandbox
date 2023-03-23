@@ -24,7 +24,18 @@ public class TicTacToeFrame extends TicTacToe
     */
    public TicTacToeFrame()
    { 
-       // add the necessary code here
+    JFrame frame = new JFrame("TicTacToe");
+    frame.setSize(250, 250);
+    
+    
+    status = new JTextArea(20, 50);
+    status.setEditable(false);
+    
+    JScrollPane scroll = new JScrollPane(status);
+    
+    frame.add(scroll);
+    frame.setVisible(true);
+    frame.pack();
    }
    
    /**
@@ -32,7 +43,7 @@ public class TicTacToeFrame extends TicTacToe
     */
     public void print() 
     {  
-        // add code here
+        status.setText(toString());
     }
 
 }
