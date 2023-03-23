@@ -9,6 +9,9 @@ import javax.swing.*;
  * 
  * @author Lynn Marshall
  * @version November 8, 2012
+ * 
+ * @author James Runtas 101109175
+ * @version March 24th 2023
  */
 
 public class TicTacToeFrame extends TicTacToe 
