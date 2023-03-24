@@ -156,7 +156,7 @@ public class TicTacToe
        |---|---|---|*/
     public void print() 
     {
-        System.out.println(toString());
+      System.out.println(toString());
     }
   
     
@@ -195,13 +195,7 @@ public class TicTacToe
     
 
 
-   public static void main(String args[]) {  
-      System.out.println("Starting");  
-      TicTacToe game = new TicTacToe();
-      TicTacToeFrame GUI = new TicTacToeFrame();
 
-      game.playGame();
-  }  
 
 }
 
