@@ -4,9 +4,9 @@ Tell the reader (someone who does not know anything about this project)
 all he/she needs to know. The comments should usually include at least:
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+PROJECT TITLE: SYSC2004 Lab 10
+PURPOSE OF PROJECT: TicTacToe
+VERSION or DATE: March 23 2023
+HOW TO START THIS PROJECT: BlueJ, create TicTacToe object
+AUTHORS: James Runtas and Lynn Marshall
+USER INSTRUCTIONS: 
