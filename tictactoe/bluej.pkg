@@ -1,7 +1,4 @@
 #BlueJ package file
-dependency1.from=TicTacToe
-dependency1.to=TicTacToeFrame
-dependency1.type=UsesDependency
 editor.fx.0.height=737
 editor.fx.0.width=814
 editor.fx.0.x=232
@@ -12,11 +9,11 @@ package.divider.horizontal=0.6001742160278745
 package.divider.vertical=0.8006666666666666
 package.editor.height=392
 package.editor.width=672
-package.editor.x=250
-package.editor.y=44
+package.editor.x=437
+package.editor.y=52
 package.frame.height=599
 package.frame.width=800
-package.numDependencies=1
+package.numDependencies=0
 package.numTargets=2
 package.showExtends=true
 package.showUses=true
