@@ -41,7 +41,8 @@ public class TicTacToeFrame extends TicTacToe
    /**
     * Prints the board to the GUI using toString().
     */
-    public void printGUI() 
+    @Override
+    public void print() 
     {  
         status.setText(toString());
     }
