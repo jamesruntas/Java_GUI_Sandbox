@@ -198,6 +198,7 @@ public class TicTacToe
    public static void main(String args[]) {  
       System.out.println("Starting");  
       TicTacToe game = new TicTacToe();
+      TicTacToeFrame GUI = new TicTacToeFrame();
 
       game.playGame();
   }  
