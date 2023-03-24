@@ -24,6 +24,8 @@ public class TicTacToeFrame extends TicTacToe
     */
    public TicTacToeFrame()
    { 
+
+    super();
     JFrame frame = new JFrame("TicTacToe");
     frame.setSize(250, 250);
     
@@ -44,7 +46,7 @@ public class TicTacToeFrame extends TicTacToe
     @Override
     public void print() 
     {  
-        status.setText(toString());
+        status.append(super.toString() + "\n");
     }
 
 }
