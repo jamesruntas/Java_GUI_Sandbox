@@ -10,7 +10,33 @@ public class TicTacToeGui extends JFrame{
     private boolean xTurn;
     
     public TicTacToeGui() {
+        super("Tic Tac Toe");
+        board = new JButton[3][3];
+        xTurn = true;
 
+        JPanel boardPanel = new JPanel(new GridLayout(3, 3));
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[i].length; j++) {
+                JButton button = new JButton(" ");
+                button.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 64));
+                button.addActionListener(new ActionListener() {
+                    public void actionPerformed(ActionEvent e) {
+                        buttonPressed(button);
+                    }
+                });
+                board[i][j] = button;
+                boardPanel.add(button);
+            }
+        }
+
+        JPanel statusPanel = new JPanel(new FlowLayout());
+        status = new JLabel("X's turn");
+        statusPanel.add(status);
+
+        Container contentPane = getContentPane();
+        contentPane.setLayout(new BorderLayout());
+        contentPane.add(boardPanel, BorderLayout.CENTER);
+        contentPane.add(statusPanel, BorderLayout.SOUTH);
 
 
     }
@@ -49,5 +75,11 @@ public class TicTacToeGui extends JFrame{
     }
     }
 
+
+    public static void main(String[] args){
+       TicTacToeGui game = new TicTacToeGui();
+       
+        
+    }
 
 }
