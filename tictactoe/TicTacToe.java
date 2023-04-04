@@ -1,4 +1,7 @@
 import java.util.*;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
 
 /**
  * A class modelling a tic-tac-toe (noughts and crosses, Xs and Os) game.
@@ -7,7 +10,7 @@ import java.util.*;
  * @version November 8, 2012
  * 
  * @author James Runtas 101109175
- * @version March 24th 2023
+ * @version April 4th 2023
  */
 
 public class TicTacToe
@@ -194,6 +197,13 @@ public class TicTacToe
     }
     
 
+   
+
+
+    public static void main(String[] args){
+      TicTacToe game = new TicTacToe();
+      game.playGame();
+  }
 
 
 }
